@@ -1,3 +1,4 @@
+
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local espEnabled = false
@@ -153,8 +154,18 @@ for _, player in pairs(Players:GetPlayers()) do createESP(player) end
 Players.PlayerAdded:Connect(createESP)
 Players.PlayerRemoving:Connect(removeESP)
 
+
+
+local GardenTab = Window:CreateTab("Grow a Garden", 4483362458)
+GardenTab:CreateButton({ Name = "Load PC Script", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end })
+GardenTab:CreateButton({ Name = "Load Mobile Script", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end })
+
 local AdminTab = Window:CreateTab("Admin", 4483362458)
-AdminTab:CreateButton({ Name = "Copy Admin Facebook", Callback = function()
+AdminTab:CreateButton({ Name = "Copy Telegram Channel", Callback = function()
     setclipboard("https://t.me/kozyhubb")
     Rayfield:Notify({Title = "Copied", Content = "Link copied to clipboard."})
 end })
