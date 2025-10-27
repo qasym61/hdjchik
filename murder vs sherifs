@@ -25,7 +25,7 @@ end
 localPlayer.CharacterAdded:Connect(function() task.wait(1) applyCharacterSettings() end)
 
 local Window = Rayfield:CreateWindow({
-    Name = "KozyHub",
+    Name = "KozyHub Beta",
     LoadingTitle = "KozyHub Loading...",
     LoadingSubtitle = "by kozybekovv",
     ConfigurationSaving = { Enabled = true, FolderName = nil, FileName = "KozyHubConfig" },
